@@ -1,16 +1,24 @@
-# React + Vite
+# Props
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Övning 1: Bookstore - Veckans Code Review-uppgift
 
-Currently, two official plugins are available:
+I denna övning skall du försöka återskapa designen som du kan se på bilden nedan. Sidan kommer i detta steg vara statisk, dvs. du kommer att hårdkoda in mycket av informationen, och sidan kommer inte att vara interaktiv. Vi kommer återvända och lösa dessa delar kommande veckor.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Följande komponenter bör finnas med:
 
-## React Compiler
+- App
+- Header
+- Cart (indikatorn som ligger i Header)
+- BookPage (kommande veckor kommer vi lägga till fler sidor)
+- BookList (valfri, ni kan också lägga era böcker rakt i BookPage)
+- Book
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Använd er av filen `books.json` i mappen `assets` för data till era objekt. Välj själva vilka delar av objekten ni vill rendera ut. Skissen behöver naturligtvis inte följas, den är bara ett förslag. Logotypen i bilden finns inte, så den kan ni ersätta med valfri bild/rubrik.
 
-## Expanding the ESLint configuration
+### Skiss
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![Screenshot](./assets/bookstore.png)
+
+## Övning 2: Valfritt projekt
+
+Skapa en valfri, egen applikation som använder sig av props. Det ligger .json-filer i assets med en massa material ni kan använda er utav.
