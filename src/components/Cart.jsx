@@ -1,10 +1,11 @@
 
-function Cart() {
+function Cart({count}) {
+    console.log(count)
 
     return (
         <section className="cart">
             <h1 className="cart__title">cart</h1>
-            <p className="cart__number">0</p>
+            <p className="cart__number">{count}</p>
         </section>
         
     )

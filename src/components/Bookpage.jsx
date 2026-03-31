@@ -1,27 +1,33 @@
 import books from "../../assets/books.json";
-import Cart from "./Cart.jsx";
+import Header from "./Header.jsx";
 import Book from './Book.jsx';
+import { useState } from 'react';
+
 
 
 function Bookpage(){
-
+let [count, setCount] = useState(0);
+// console.log(count)
 
     return (
         <section className="bookpage">
             <section className='bookpage-wrap'>
-                <Cart/>
+                <Header count={count}/>
                 <h1 className="bookpage-title">Bookstore</h1>
                 <section className="bookpage__book-section">
+                
                 {books.map((book, index) => (
-                    
                     <Book 
                     key={index}
                     title={book.title}
                     author={book.author}
                     desc={book.desc}
-                    button={"Add to cart"}
+                    button={book.button}
+                    addToCart={() => setCount (prev => prev + 1)}
                     />
+                    
                 ))}
+                
                 </section>
             </section>
             
@@ -30,6 +36,7 @@ function Bookpage(){
 }
 
 export default Bookpage
+
 
 
 // data skickas till book
