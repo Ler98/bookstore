@@ -2,28 +2,30 @@ import books from "../../assets/books.json";
 import Header from "./Header.jsx";
 import Book from './Book.jsx';
 import { useState } from 'react';
+import Counter from "./Counter.jsx"
 
 
 
 function Bookpage(){
-let [count, setCount] = useState(0);
-// console.log(count)
+let [value, setvalue] = useState(0);
+// value skapas i useState. skickas som props till Header
 
     return (
         <section className="bookpage">
             <section className='bookpage-wrap'>
-                <Header count={count}/>
+                <Header value={value}/>
                 <h1 className="bookpage-title">Bookstore</h1>
                 <section className="bookpage__book-section">
                 
                 {books.map((book, index) => (
-                    <Book 
+                    <Book //detta skickas som props till book.jsx
                     key={index}
                     title={book.title}
                     author={book.author}
                     desc={book.desc}
                     button={book.button}
-                    addToCart={() => setCount (prev => prev + 1)}
+                    addToCart={() => setvalue (v => v + 1)} //baserat på tidigare värde, då används denna arrow function.
+                    countButton={() => setvalue (v => v + 1)}
                     />
                     
                 ))}

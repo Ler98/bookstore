@@ -108,3 +108,15 @@
   color:var(--color-purple);
   font-weight: 700;
 }
+
+.countButton{
+  background-color: var(--color-pink);
+  color: var(--color-purple);
+  font-weight: 700;
+  padding: .5rem;
+  font-size: 12px;
+  
+  border: none;
+  border-radius: .2rem;
+  cursor: pointer;
+}

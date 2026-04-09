@@ -1,0 +1,25 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root{
+  --color-pink: rgb(255, 190, 190);
+  --color-green: rgb(9, 148, 127);
+  --color-purple: rgb(30, 25, 45);
+
+}
+
+
+.loginpage {
+    background-color: var(--color-pink);
+    min-height: 500px ;
+    display: flex;
+    justify-content: center;
+}
+
+.login-wrap{
+  width: 60%;
+  
+}

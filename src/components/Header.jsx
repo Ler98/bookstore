@@ -1,11 +1,11 @@
 import Cart from "./Cart.jsx"; 
 
-function Header({count}){
+function Header({value}){
 
 
     return (
         <header>
-            <Cart count={count}/>
+            <Cart count={value}/>
         </header>
                 
                 )
